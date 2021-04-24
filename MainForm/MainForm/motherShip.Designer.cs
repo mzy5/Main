@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.btnParitate = new System.Windows.Forms.Button();
+            this.btnGeneratii = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnParitate
@@ -41,13 +42,24 @@
             this.btnParitate.UseVisualStyleBackColor = true;
             this.btnParitate.Click += new System.EventHandler(this.btnParitate_Click);
             // 
-            // Form1
+            // btnGeneratii
+            // 
+            this.btnGeneratii.Location = new System.Drawing.Point(29, 74);
+            this.btnGeneratii.Name = "btnGeneratii";
+            this.btnGeneratii.Size = new System.Drawing.Size(75, 23);
+            this.btnGeneratii.TabIndex = 1;
+            this.btnGeneratii.Text = "Generatii";
+            this.btnGeneratii.UseVisualStyleBackColor = true;
+            this.btnGeneratii.Click += new System.EventHandler(this.btnGeneratii_Click);
+            // 
+            // motherShip
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnGeneratii);
             this.Controls.Add(this.btnParitate);
-            this.Name = "Form1";
+            this.Name = "motherShip";
             this.Text = "Form1";
             this.ResumeLayout(false);
 
@@ -56,6 +68,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnParitate;
+        private System.Windows.Forms.Button btnGeneratii;
     }
 }
 

@@ -22,5 +22,11 @@ namespace MainForm
             Paritate paritatePage = new Paritate();
             paritatePage.Show();
         }
+
+        private void btnGeneratii_Click(object sender, EventArgs e)
+        {
+            Generatii generatiiPage = new Generatii();
+            generatiiPage.Show();
+        }
     }
 }

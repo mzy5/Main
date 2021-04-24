@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Generatii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Generatii.Designer.cs">
+      <DependentUpon>Generatii.cs</DependentUpon>
+    </Compile>
     <Compile Include="motherShip.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Generatii.resx">
+      <DependentUpon>Generatii.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="motherShip.resx">
       <DependentUpon>motherShip.cs</DependentUpon>
     </EmbeddedResource>
