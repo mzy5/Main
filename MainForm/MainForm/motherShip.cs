@@ -28,5 +28,11 @@ namespace MainForm
             Generatii generatiiPage = new Generatii();
             generatiiPage.Show();
         }
+
+        private void btnCombo_Click(object sender, EventArgs e)
+        {
+            ComboBoxForm comboBoxPage = new ComboBoxForm();
+            comboBoxPage.Show();
+        }
     }
 }

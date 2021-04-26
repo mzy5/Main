@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ComboBoxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComboBoxForm.Designer.cs">
+      <DependentUpon>ComboBoxForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Generatii.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,9 @@
     <Compile Include="TestEnumForm.Designer.cs">
       <DependentUpon>TestEnumForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ComboBoxForm.resx">
+      <DependentUpon>ComboBoxForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Generatii.resx">
       <DependentUpon>Generatii.cs</DependentUpon>
     </EmbeddedResource>

@@ -30,6 +30,7 @@
         {
             this.btnParitate = new System.Windows.Forms.Button();
             this.btnGeneratii = new System.Windows.Forms.Button();
+            this.btnCombo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnParitate
@@ -52,11 +53,22 @@
             this.btnGeneratii.UseVisualStyleBackColor = true;
             this.btnGeneratii.Click += new System.EventHandler(this.btnGeneratii_Click);
             // 
+            // btnCombo
+            // 
+            this.btnCombo.Location = new System.Drawing.Point(29, 124);
+            this.btnCombo.Name = "btnCombo";
+            this.btnCombo.Size = new System.Drawing.Size(75, 23);
+            this.btnCombo.TabIndex = 2;
+            this.btnCombo.Text = "Combobox";
+            this.btnCombo.UseVisualStyleBackColor = true;
+            this.btnCombo.Click += new System.EventHandler(this.btnCombo_Click);
+            // 
             // motherShip
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnCombo);
             this.Controls.Add(this.btnGeneratii);
             this.Controls.Add(this.btnParitate);
             this.Name = "motherShip";
@@ -69,6 +81,7 @@
 
         private System.Windows.Forms.Button btnParitate;
         private System.Windows.Forms.Button btnGeneratii;
+        private System.Windows.Forms.Button btnCombo;
     }
 }
 
