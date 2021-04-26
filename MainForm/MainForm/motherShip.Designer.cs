@@ -31,6 +31,7 @@
             this.btnParitate = new System.Windows.Forms.Button();
             this.btnGeneratii = new System.Windows.Forms.Button();
             this.btnCombo = new System.Windows.Forms.Button();
+            this.btnSarbatorit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnParitate
@@ -63,11 +64,22 @@
             this.btnCombo.UseVisualStyleBackColor = true;
             this.btnCombo.Click += new System.EventHandler(this.btnCombo_Click);
             // 
+            // btnSarbatorit
+            // 
+            this.btnSarbatorit.Location = new System.Drawing.Point(29, 176);
+            this.btnSarbatorit.Name = "btnSarbatorit";
+            this.btnSarbatorit.Size = new System.Drawing.Size(75, 23);
+            this.btnSarbatorit.TabIndex = 3;
+            this.btnSarbatorit.Text = "Sarbatorit";
+            this.btnSarbatorit.UseVisualStyleBackColor = true;
+            this.btnSarbatorit.Click += new System.EventHandler(this.btnSarbatorit_Click);
+            // 
             // motherShip
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSarbatorit);
             this.Controls.Add(this.btnCombo);
             this.Controls.Add(this.btnGeneratii);
             this.Controls.Add(this.btnParitate);
@@ -82,6 +94,7 @@
         private System.Windows.Forms.Button btnParitate;
         private System.Windows.Forms.Button btnGeneratii;
         private System.Windows.Forms.Button btnCombo;
+        private System.Windows.Forms.Button btnSarbatorit;
     }
 }
 

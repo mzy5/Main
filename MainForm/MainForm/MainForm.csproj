@@ -72,6 +72,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sarbatorit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sarbatorit.Designer.cs">
+      <DependentUpon>Sarbatorit.cs</DependentUpon>
+    </Compile>
     <Compile Include="TestEnumForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Sarbatorit.resx">
+      <DependentUpon>Sarbatorit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TestEnumForm.resx">
       <DependentUpon>TestEnumForm.cs</DependentUpon>
     </EmbeddedResource>

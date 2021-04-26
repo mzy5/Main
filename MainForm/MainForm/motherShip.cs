@@ -34,5 +34,11 @@ namespace MainForm
             ComboBoxForm comboBoxPage = new ComboBoxForm();
             comboBoxPage.Show();
         }
+
+        private void btnSarbatorit_Click(object sender, EventArgs e)
+        {
+            Sarbatorit sarbatoritPage = new Sarbatorit();
+            sarbatoritPage.Show();
+        }
     }
 }
