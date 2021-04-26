@@ -40,5 +40,11 @@ namespace MainForm
             Sarbatorit sarbatoritPage = new Sarbatorit();
             sarbatoritPage.Show();
         }
+
+        private void btnMinMax3_Click(object sender, EventArgs e)
+        {
+            MinMax3 minMaxPage = new MinMax3();
+            minMaxPage.Show();
+        }
     }
 }

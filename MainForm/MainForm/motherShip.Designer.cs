@@ -32,6 +32,7 @@
             this.btnGeneratii = new System.Windows.Forms.Button();
             this.btnCombo = new System.Windows.Forms.Button();
             this.btnSarbatorit = new System.Windows.Forms.Button();
+            this.btnMinMax3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnParitate
@@ -74,11 +75,22 @@
             this.btnSarbatorit.UseVisualStyleBackColor = true;
             this.btnSarbatorit.Click += new System.EventHandler(this.btnSarbatorit_Click);
             // 
+            // btnMinMax3
+            // 
+            this.btnMinMax3.Location = new System.Drawing.Point(29, 228);
+            this.btnMinMax3.Name = "btnMinMax3";
+            this.btnMinMax3.Size = new System.Drawing.Size(75, 23);
+            this.btnMinMax3.TabIndex = 4;
+            this.btnMinMax3.Text = "MinMax3";
+            this.btnMinMax3.UseVisualStyleBackColor = true;
+            this.btnMinMax3.Click += new System.EventHandler(this.btnMinMax3_Click);
+            // 
             // motherShip
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnMinMax3);
             this.Controls.Add(this.btnSarbatorit);
             this.Controls.Add(this.btnCombo);
             this.Controls.Add(this.btnGeneratii);
@@ -95,6 +107,7 @@
         private System.Windows.Forms.Button btnGeneratii;
         private System.Windows.Forms.Button btnCombo;
         private System.Windows.Forms.Button btnSarbatorit;
+        private System.Windows.Forms.Button btnMinMax3;
     }
 }
 
