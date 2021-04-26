@@ -23,34 +23,47 @@ namespace MainForm
             bool conversionIsSuccessful;
 
             conversionIsSuccessful = Double.TryParse(txtAge.Text, out valFromAge);
+            var birthYear = DateTime.Now.Year - valFromAge;
+
 
             if (conversionIsSuccessful == true)
             {
-                if (((2021 - valFromAge) >= 1883) && ((2021 - valFromAge) <= 1900))
+                string generation = string.Empty;
+
+                if (((birthYear) >= 1883) && ((birthYear) <= 1900))
                 {
-                    MessageBox.Show("Lost Generation");
-                } else if (((2021 - valFromAge) >= 1901) && ((2021 - valFromAge) <= 1927))
-                {
-                    MessageBox.Show("Greatest Generation");
-                } else if (((2021 - valFromAge) >= 1928) && ((2021 - valFromAge) <= 1945))
-                {
-                    MessageBox.Show("Silent Generation");
-                } else if (((2021 - valFromAge) >= 1946) && ((2021 - valFromAge) <= 1964))
-                {
-                    MessageBox.Show("Baby Boomers");
-                } else if (((2021 - valFromAge) >= 1965) && ((2021 - valFromAge) <= 1980))
-                {
-                    MessageBox.Show("Generation X");
-                } else if (((2021 - valFromAge) >= 1981) && ((2021 - valFromAge) <= 1996))
-                {
-                    MessageBox.Show("Millenials");
-                } else if (((2021 - valFromAge) >= 1997) && ((2021 - valFromAge) <= 2010))
-                {
-                    MessageBox.Show("Generation Z");
-                } else if (((2021 - valFromAge) >= 2010) && ((2021 - valFromAge) <= 2020))
-                {
-                    MessageBox.Show("Generation Alpha");
+                    generation = "Lost Generation";
                 }
+                else if (((birthYear) >= 1901) && ((birthYear) <= 1927))
+                {
+                    generation = "Greatest Generation";
+                }
+                else if (((birthYear) >= 1928) && ((birthYear) <= 1945))
+                {
+                    generation = "Silent Generation";
+                }
+                else if (((birthYear) >= 1946) && ((birthYear) <= 1964))
+                {
+                    generation = "Baby Boomers";
+                }
+                else if (((birthYear) >= 1965) && ((birthYear) <= 1980))
+                {
+                    generation = "Generation X";
+                }
+                else if (((birthYear) >= 1981) && ((birthYear) <= 1996))
+                {
+                    generation = "Millenials";
+                }
+                else if (((birthYear) >= 1997) && ((birthYear) <= 2010))
+                {
+                    generation = "Generation Z";
+                }
+                else if (((birthYear) >= 2010) && ((birthYear) <= 2020))
+                {
+                    generation = "Generation Alpha";
+                }
+                else generation = "Not found";
+                MessageBox.Show(generation);
             }
         }
     }
