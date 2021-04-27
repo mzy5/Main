@@ -24,9 +24,6 @@ namespace MainForm
             Person myPerson = new Person();
             myPerson.Name = "Mady";
             myPerson.Gender = 0;
-
-
-            const double PI = 3.1415;
             
 
             if((Gender)myPerson.Gender ==  Gender.Feminin)

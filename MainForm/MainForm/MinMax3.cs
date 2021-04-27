@@ -52,6 +52,54 @@ namespace MainForm
             {
                 MessageBox.Show("The three numbers are equal, no max for you!");
             }
+            else if (firstNo == secondNo && firstNo > thirdNo)
+            {
+                MessageBox.Show("The max is: " + firstNo);
+            }
+            else if (firstNo == thirdNo && firstNo > secondNo)
+            {
+                MessageBox.Show("The max is: " + firstNo);
+            }
+            else if (secondNo == firstNo && secondNo > thirdNo)
+            {
+                MessageBox.Show("The max is: " + secondNo);
+            }
+            else if (secondNo == thirdNo && secondNo > firstNo)
+            {
+                MessageBox.Show("The max is: " + secondNo);
+            }
+            else if (thirdNo == firstNo && thirdNo > secondNo)
+            {
+                MessageBox.Show("The max is: " + thirdNo);
+            }
+            else if (thirdNo == secondNo && thirdNo > firstNo)
+            {
+                MessageBox.Show("The max is: " + thirdNo);
+            }
+            else if (firstNo < secondNo && firstNo > thirdNo)
+            {
+                MessageBox.Show("The max is: " + secondNo);
+            }
+            else if (firstNo < thirdNo && firstNo > secondNo)
+            {
+                MessageBox.Show("The max is: " + thirdNo);
+            }
+            else if (secondNo < firstNo && secondNo > thirdNo)
+            {
+                MessageBox.Show("The max is: " + firstNo);
+            }
+            else if (secondNo < thirdNo && secondNo > firstNo)
+            {
+                MessageBox.Show("The max is: " + thirdNo);
+            }
+            else if (thirdNo < firstNo && thirdNo > secondNo)
+            {
+                MessageBox.Show("The max is: " + firstNo);
+            }
+            else if (thirdNo < secondNo && thirdNo > firstNo)
+            {
+                MessageBox.Show("The max is: " + secondNo);
+            }
         }
     }
 }
