@@ -90,6 +90,7 @@
     <Compile Include="TestEnumForm.Designer.cs">
       <DependentUpon>TestEnumForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ValidateMin.cs" />
     <EmbeddedResource Include="ComboBoxForm.resx">
       <DependentUpon>ComboBoxForm.cs</DependentUpon>
     </EmbeddedResource>

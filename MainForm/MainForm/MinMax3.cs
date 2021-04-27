@@ -23,22 +23,10 @@ namespace MainForm
             var secondNo = Convert.ToDouble(txtNo2.Text);
             var thirdNo = Convert.ToDouble(txtNo3.Text);
 
-            if (firstNo < secondNo && firstNo < thirdNo)
-            {
-                MessageBox.Show("The min is: " + firstNo);
-            }
-            else if (secondNo < firstNo && secondNo < thirdNo)
-            {
-                MessageBox.Show("The min is: " + secondNo);
-            }
-            else if (thirdNo < firstNo && thirdNo < secondNo)
-            {
-                MessageBox.Show("The min is: " + thirdNo);
-            }
-            else if (firstNo == secondNo && secondNo == thirdNo)
-            {
-                MessageBox.Show("The three numbers are equal, no max for you!");
-            }
+            ValidateMin validator = new ValidateMin();
+            var min = validator.GetMin(firstNo, secondNo, thirdNo);
+
+            MessageBox.Show("Minimul este: " + min);
         }
 
         private void btnCheckMax_Click(object sender, EventArgs e)
