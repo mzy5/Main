@@ -23,7 +23,7 @@ namespace MainForm
             var secondNo = Convert.ToDouble(txtNo2.Text);
             var thirdNo = Convert.ToDouble(txtNo3.Text);
 
-            ValidateMin validator = new ValidateMin();
+            Validate validator = new Validate();
             var min = validator.GetMin(firstNo, secondNo, thirdNo);
 
             MessageBox.Show("Minimul este: " + min);
@@ -35,71 +35,11 @@ namespace MainForm
             var secondNo = Convert.ToDouble(txtNo2.Text);
             var thirdNo = Convert.ToDouble(txtNo3.Text);
 
+            Validate validator = new Validate();
+            var max = validator.GetMax(firstNo, secondNo, thirdNo);
 
-            if (firstNo > secondNo && firstNo > thirdNo)
-            {
-                MessageBox.Show("The max is: " + firstNo);
-            }
-            else if (secondNo > firstNo && secondNo > thirdNo)
-            {
-                MessageBox.Show("The max is: " + secondNo);
-            }
-            else if (thirdNo > firstNo && thirdNo > secondNo)
-            {
-                MessageBox.Show("The max is: " + thirdNo);
-            }
-            else if (firstNo == secondNo && secondNo == thirdNo)
-            {
-                MessageBox.Show("The three numbers are equal, no max for you!");
-            }
-            else if (firstNo == secondNo && firstNo > thirdNo)
-            {
-                MessageBox.Show("The max is: " + firstNo);
-            }
-            else if (firstNo == thirdNo && firstNo > secondNo)
-            {
-                MessageBox.Show("The max is: " + firstNo);
-            }
-            else if (secondNo == firstNo && secondNo > thirdNo)
-            {
-                MessageBox.Show("The max is: " + secondNo);
-            }
-            else if (secondNo == thirdNo && secondNo > firstNo)
-            {
-                MessageBox.Show("The max is: " + secondNo);
-            }
-            else if (thirdNo == firstNo && thirdNo > secondNo)
-            {
-                MessageBox.Show("The max is: " + thirdNo);
-            }
-            else if (thirdNo == secondNo && thirdNo > firstNo)
-            {
-                MessageBox.Show("The max is: " + thirdNo);
-            }
-            else if (firstNo < secondNo && firstNo > thirdNo)
-            {
-                MessageBox.Show("The max is: " + secondNo);
-            }
-            else if (firstNo < thirdNo && firstNo > secondNo)
-            {
-                MessageBox.Show("The max is: " + thirdNo);
-            }
-            else if (secondNo < firstNo && secondNo > thirdNo)
-            {
-                MessageBox.Show("The max is: " + firstNo);
-            }
-            else if (secondNo < thirdNo && secondNo > firstNo)
-            {
-                MessageBox.Show("The max is: " + thirdNo);
-            }
-            else if (thirdNo < firstNo && thirdNo > secondNo)
-            {
-                MessageBox.Show("The max is: " + firstNo);
-            }
-            else if (thirdNo < secondNo && thirdNo > firstNo)
-            {
-                MessageBox.Show("The max is: " + secondNo);
-            }
+            MessageBox.Show("Maximul este: " + max);
+
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MainForm
 {
-    public class ValidateMin
+    public class Validate
     {
 
         public double GetMin(double firstNo, double secondNo, double thirdNo)
@@ -15,6 +15,7 @@ namespace MainForm
             numbersList.Add(firstNo);
             numbersList.Add(secondNo);
             numbersList.Add(thirdNo);
+
 
             var min = numbersList[0];
 
@@ -26,6 +27,26 @@ namespace MainForm
                 }
             }
             return min;
+        }
+
+        public double GetMax(double firstNo, double secondNo, double thirdNo)
+        {
+            List<double> numbersList = new List<double>();
+            numbersList.Add(firstNo);
+            numbersList.Add(secondNo);
+            numbersList.Add(thirdNo);
+
+
+            var max = numbersList[0];
+
+            for (int i = 1; i < numbersList.Count; i++)
+            {
+                if (max < numbersList[i])
+                {
+                    max = numbersList[i];
+                }
+            }
+            return max;
         }
     }
 }
